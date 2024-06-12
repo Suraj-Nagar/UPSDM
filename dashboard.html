@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Page</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+        <h1>Welcome, to Dashboard <span id="logged-in-email"></span></h1>
+        <div class="header-buttons">
+            <button class="button"><a href="index.html">Go to website</a></button>
+            <button class="button"><a href="login.html">Logout</a></button>
+        </div>
+    </div>
+</header>
+<div class="main-container">
+    <aside class="sidebar">
+        <ul>
+            <li><a href="#trainer" onclick="showSection('trainer')">Trainer</a></li>
+            <li><a href="#center" onclick="showSection('center')">Center</a></li>
+            <li><a href="#attendance" onclick="showSection('attendance')">Attendance</a></li>
+            <li><a href="#batch-management" onclick="showSection('batch-management')">Batch Management</a></li>
+            <li><a href="#update-user-details" onclick="showSection('update-user-details')">Update User Details</a></li>
+        </ul>
+    </aside>
+    <main>
+        <section id="trainer" class="content-section">
+            <h2>Trainer</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trainer ID</th>
+                        <th>Trainer Name</th>
+                        <th>Email</th>
+                        <th>Contact No</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="trainer-body">
+                    <!-- JavaScript will populate this -->
+                </tbody>
+            </table>
+        </section>
+        <section id="center" class="content-section">
+            <h2>Center</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Center ID</th>
+                        <th>Center Name</th>
+                        <th>Location</th>
+                        <th>Contact No</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="center-body">
+                    <!-- JavaScript will populate this -->
+                </tbody>
+            </table>
+        </section>
+        <section id="attendance" class="content-section">
+            <h2>Attendance</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Attendance ID</th>
+                        <th>Trainer ID</th>
+                        <th>Batch ID</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="attendance-body">
+                    <!-- JavaScript will populate this -->
+                </tbody>
+            </table>
+        </section>
+        <section id="batch-management" class="content-section">
+            <h2>Batch Management</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Batch ID</th>
+                        <th>Batch Name</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="batch-management-body">
+                    <!-- JavaScript will populate this -->
+                </tbody>
+            </table>
+        </section>
+        <section id="update-user-details" class="content-section">
+            <h2>Update User Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>User Name</th>
+                        <th>Email</th>
+                        <th>Contact No</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="update-user-details-body">
+                    <!-- JavaScript will populate this -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+</div>
+
+    
+
+<footer>
+    <p>All rights reserved</p>
+</footer>
+
+</script>
+<script src="dashboard.js"></script>
+</body>
+</html>
